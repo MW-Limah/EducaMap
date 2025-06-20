@@ -45,7 +45,7 @@ O sistema será desenvolvido em Javascript, utilizando as seguintes tecnologias:
 
 ### Você pode ver o algumas informações mais visuais sobre o projeto nos links:
 
-- [Design Conceitual da Interface Princial no Figma](https://www.figma.com/design/9LwNq8N9ZPJPpTgCgJwUVl/EducaMap-interface?node-id=0-1&t=HD3YE7T63ilNQmBc-1)
+- [Design Conceitual da Interface Princial no Figma](https://www.figma.com/design/9LwNq8N9ZPJPpTgCgJwUVl/EducaMap-interface?node-id=0-1&t=IUbo5UJpj0WHLSP5-1)
 - [Organograma no Miro](https://miro.com/app/board/uXjVIr08X2o=/?share_link_id=560489867268)
 
 ### Você gostaria de ajudar?
