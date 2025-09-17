@@ -1,5 +1,6 @@
 import styles from './main.module.css';
-import Editbar from '../editbar/editbar';
+import Editbar from '../EditBar/editbar';
+import SearchCenter from '../SearchCenter/searchcenter';
 
 export default function Main() {
   return (
@@ -12,7 +13,9 @@ export default function Main() {
       <span className={styles.divisor}></span>
       <span className={styles.shadow}></span>
       <div className={styles.coverLeft}>
-        <section className={styles.contentLeft}></section>
+        <section className={styles.contentLeft}>
+          <SearchCenter />
+        </section>
       </div>
     </main>
   );
