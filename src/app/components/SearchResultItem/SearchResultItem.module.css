@@ -1,0 +1,66 @@
+.SearchResultItemBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 260px;
+  height: 245px;
+  border: 2px solid #a2a2a2;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.TypeAndGo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.Type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Type img {
+  width: 1.5rem;
+}
+
+.Go {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Go img {
+  cursor: pointer;
+  width: 1rem;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--primary-font-color);
+}
+
+.description {
+  font-size: 0.8rem;
+  color: var(--secundary-font-color);
+  margin-bottom: 0.5rem;
+}
+
+.AuthorAndDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-font-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.ReadTime {
+  font-size: 0.7rem;
+  display: flex;
+  gap: 0.3rem;
+  color: var(--secundary-font-color);
+}

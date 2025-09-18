@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './searchcenter.module.css';
 import Image from 'next/image';
+import SearchResultItem from '../SearchResultItem/SearchResultItem';
 
 export default function SearchCenter() {
   const [filtrosAtivos, setFiltrosAtivos] = useState([]);
@@ -91,6 +92,16 @@ export default function SearchCenter() {
           ))}
         </article>
       </section>
+
+      {/* Campo dos resultados */}
+      <div className={styles.ResultsContainer}>
+        <h3 className={styles.ResultsTitle}>Resultados</h3>
+        <div className={styles.ResultsGrid}>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
+            <SearchResultItem key={num} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

@@ -36,6 +36,7 @@
   align-items: center;
 }
 .contentLeft {
+  overflow-y: auto;
   margin-right: 30px;
   margin-left: -15px;
   border-radius: 20px 10px 10px 20px;
@@ -56,4 +57,12 @@
   height: 80vh;
   z-index: 3;
   filter: blur(20px);
+}
+
+.contentLeft::-webkit-scrollbar {
+  width: 8px;
+}
+.contentLeft::-webkit-scrollbar-thumb {
+  background-color: #a2a2a2;
+  border-radius: 10px;
 }
