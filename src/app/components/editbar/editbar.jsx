@@ -1,44 +1,60 @@
+'use client';
+
 import styles from './editbar.module.css';
 import Image from 'next/image';
-export default function Editbar() {
+
+export default function Editbar({ onCommand }) {
   return (
     <div className={styles.editbar}>
       <section className={styles.font}>
-        <select className={styles.fontlist} name="searchfont" id="">
-          <option value="1">Arial</option>
-          <option value="2">Instrument Sans</option>
-          <option value="3">Cambria</option>
-          <option value="4">Kavivanar</option>
+        <select
+          className={styles.fontlist}
+          onChange={(e) => onCommand?.('fontName', e.target.value)}
+        >
+          <option value="Arial">Arial</option>
+          <option value="Instrument Sans">Instrument Sans</option>
+          <option value="Cambria">Cambria</option>
+          <option value="Kavivanar">Kavivanar</option>
         </select>
-        <input className={styles.showsizefont} type="number" min={0} step={1} />
+
+        <input
+          className={styles.showsizefont}
+          type="number"
+          min={1}
+          max={7}
+          step={1}
+          onChange={(e) => onCommand?.('fontSize', e.target.value)}
+        />
       </section>
+
       <section className={styles.fontpanel}>
-        <button>
+        <button onClick={() => onCommand?.('bold')}>
           <strong>B</strong>
         </button>
-        <button>
+        <button onClick={() => onCommand?.('italic')}>
           <i>I</i>
         </button>
-        <button>
+        <button onClick={() => onCommand?.('underline')}>
           <u>U</u>
         </button>
       </section>
+
       <section className={styles.textstyle}>
-        <button>
+        <button onClick={() => onCommand?.('insertUnorderedList')}>
           <Image
             src={'/liststyle.png'}
             width={45}
             height={45}
             alt="Estilo de Lista"
-          ></Image>
+          />
         </button>
-        <button>
+        <button onClick={() => onCommand?.('justifyCenter')}>
           <Image
             src={'/textorganization.png'}
             width={45}
             height={45}
             alt="Organização de textos"
-          ></Image>
+          />
         </button>
       </section>
     </div>

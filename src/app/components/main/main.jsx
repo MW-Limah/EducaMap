@@ -1,13 +1,14 @@
 import styles from './main.module.css';
 import Editbar from '../EditBar/editbar';
 import SearchCenter from '../SearchCenter/searchcenter';
+import TextEditor from '../TextEditor/TextEditor';
 
 export default function Main() {
   return (
     <main className={styles.container}>
       <div className={styles.coverRight}>
         <section className={styles.contentRight}>
-          <Editbar />
+          <TextEditor />
         </section>
       </div>
       <span className={styles.divisor}></span>
